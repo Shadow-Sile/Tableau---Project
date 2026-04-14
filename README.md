@@ -1,10 +1,11 @@
-# 📊 Airbnb Data Analysis — Interactive Dashboard in Tableau
+# -> Airbnb Data Analysis — Interactive Dashboard in Tableau
 
-Project built as a data visualization practice by a **19-year-old student** training as a **Data Analyst**. Using a real Airbnb listings dataset, an **interactive Tableau Public dashboard** was created to analyze prices, occupation rates, and estimated revenue by geographic area and property type.
+Project built as a data visualization practice by a 18-year-old student training as a **Data Analyst**. 
+Using a real Airbnb listings dataset, an **interactive Tableau Public dashboard** was created to analyze prices, occupation rates, and estimated revenue by geographic area and property type.
 
 ---
 
-## 📁 Dataset
+## -> Dataset
 
 The source file (`Tableau Full Project.xlsx`) contains two tables related through an `INNER JOIN` on `Listings.id = Calendar.listing_id`:
 
@@ -23,13 +24,12 @@ The source file (`Tableau Full Project.xlsx`) contains two tables related throug
 | `accommodates` | Listings | Maximum number of guests |
 | `availability_365` | Listings | Days available throughout the year |
 | `room_type` | Listings | Type of room (Entire home, Private room…) |
-| `neighbourhood_cleansed` | Listings | Standardized neighborhood name |
 | `date` | Calendar | Availability date |
 | `available` | Calendar | Whether the listing is available on that day |
 
 ---
 
-## 🧮 Calculated Fields
+## -> Calculated Fields
 
 Three **custom calculated fields** were created inside Tableau to derive relevant business metrics not directly available in the raw data:
 
@@ -49,11 +49,11 @@ Calculates the **annual occupation rate** of each listing — what percentage of
 ```
 [price] / [accommodates]
 ```
-Normalizes price by dividing it by the number of guests the listing accommodates. Allows **fair comparison between listings of different sizes**, since a higher price can be reasonable if it sleeps more people.
+Normalizes price by dividing it by the number of guests the listing accommodates. Allows **comparison between listings of different sizes**, since a higher price can be reasonable if it sleeps more people.
 
 ---
 
-## 📈 Visualizations — Worksheets
+## -> Visualizations — Worksheets
 
 The project is made up of **11 individual worksheets** that feed into the final dashboard:
 
@@ -80,13 +80,13 @@ Three single-number cards that provide immediate context to the viewer:
 
 ---
 
-## 🗂️ Dashboard — `RESULT`
+## -> Dashboard — `RESULT`
 
 The final dashboard (`RESULT`) consolidates the most relevant visualizations into a single interactive view. Filters allow the user to segment data by area, property type, or number of bedrooms, updating all charts simultaneously.
 
-The layout follows a logical analysis flow: starting from global KPIs, drilling down into geographic and property-type breakdowns, and finishing with the revenue time series.
+The layout follows a logical analysis: starting from global KPIs, then we move into geographic and property-type dates, and finishing with the revenue time series.
 
-🔗 **[View the dashboard on Tableau Public]**
+🔗 **https://public.tableau.com/app/profile/dario.mititelu7577/viz/ProyectoAirbnb_17755717044030/RESULT?publish=yes**
 
 x  
 
