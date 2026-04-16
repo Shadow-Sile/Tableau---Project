@@ -37,19 +37,19 @@ Three **custom calculated fields** were created inside Tableau to derive relevan
 ```
 [price] * (365 - [availability_365])
 ```
-Estimates the **annual revenue** of each listing by multiplying the nightly price by the number of occupied days (365 minus available days). Helps identify which property types generate the most income.
+Estimates the **annual revenue** of each listing by multiplying the nightly price by the number of occupied days (365 minus available days). To identify which property types generate the most income.
 
 ### `Tax Occupation %`
 ```
 (365 - [availability_365]) / 365 * 100
 ```
-Calculates the **annual occupation rate** of each listing — what percentage of the year it is actually booked. This is the key metric for comparing performance across different areas.
+Calculates the **annual occupation rate** of each listing — what percentage of the year it is actually registered. For comparing performance across different areas.
 
 ### `Price per Guest`
 ```
 [price] / [accommodates]
 ```
-Normalizes price by dividing it by the number of guests the listing accommodates. Allows **comparison between listings of different sizes**, since a higher price can be reasonable if it sleeps more people.
+Normalizes price by dividing it by the number of guests the listing has. Allows **compares between listings different sizes**, where a higher price can be reasonable if it sleeps more people.
 
 ---
 
@@ -75,8 +75,9 @@ Three single-number cards that provide immediate context to the viewer:
 - **`Total Revenue by Bedrooms`** — which bedroom segment generates the most total revenue.
 
 ### Cross analysis and time series
-- **`Price vs Occupation Rate %`** — relationship between price and occupation rate. Reveals whether more expensive listings get booked less, or whether the market absorbs them equally.
-- **`Revenue Per Year`** — estimated revenue trend over the year, useful for detecting seasonality patterns.
+- **`Price vs Occupation Rate %`** — relationship between price and occupation rate. Reveals whether more expensive listings get booked less, or whether the market act equally.
+  
+- **`Revenue Per Year`** — estimated revenue trend over the year, for detecting seasonality patterns.
 
 ---
 
